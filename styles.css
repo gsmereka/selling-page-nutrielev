@@ -1,0 +1,269 @@
+/* Variáveis globais de cores */
+:root {
+    --cor-primaria: #8e236e; /* Verde oliva */
+    --cor-secundaria: #d5e8d4; /* Verde menta suave */
+    --cor-terciaria: #8e236e; /* Laranja pêssego */
+    --cor-quaternaria: #ffffff; /* Branco puro */
+    --cor-fundo-claro: #f8fdfb; /* Verde muito claro */
+    --cor-fundo-escuro: #355c4b; /* Verde musgo */
+    --cor-acao: #d5e8d4; /* Coral suave */
+    --cor-destaque: #8bc34a; /* Verde lima */
+}
+
+/* Estilo geral do body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--cor-primaria);
+}
+
+/* Estilo do header */
+header.header {
+    background: var(--cor-fundo-escuro);
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-quaternaria);
+}
+
+header .container {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-acao);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--cor-secundaria);
+}
+
+a.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: var(--cor-quaternaria);
+    background: var(--cor-acao);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header #foto-ao-lado img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Botão WhatsApp */
+button.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(22, 139, 22);
+    color: var(--cor-fundo-claro);
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das seções principais */
+section {
+    padding: 2rem 1rem;
+    background: var(--cor-fundo-claro);
+}
+
+/* Seção Método */
+#metodo {
+    background: var(--cor-fundo-claro);
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+#metodo .text {
+    flex: 1;
+    margin-right: 2rem;
+    color: var(--cor-primaria);
+}
+
+#metodo .image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Seção Detalhes */
+#detalhes {
+    text-align: center;
+    background: var(--cor-secundaria);
+    color: var(--cor-fundo-escuro);
+}
+
+#detalhes h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cor-destaque);
+}
+
+#detalhes a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: var(--cor-fundo-claro);
+    background: var(--cor-terciaria);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Seção Carrossel */
+#carrossel {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+#carrossel .carousel {
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 1200px;
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel {
+    > * {
+        flex: 0 0 25%;
+    }
+}
+
+#carrossel .group {
+    display: flex;
+    gap: 15px;
+    will-change: transform;
+    animation: moverCarrossel 10s linear infinite;
+}
+
+.card {
+    width: 100%;
+}
+
+/* Animação do carrossel */
+@keyframes moverCarrossel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Seção Antes e Depois */
+#antes-depois {
+    text-align: center;
+    background: var(--cor-fundo-claro);
+}
+
+#antes-depois .images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 1rem;
+}
+
+#antes-depois .images img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+#antes-depois a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: var(--cor-quaternaria);
+    background: var(--cor-acao);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Seção Como Funciona */
+#como-funciona {
+    background: var(--cor-fundo-escuro);
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    color: var(--cor-quaternaria);
+}
+
+#como-funciona .etapa {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    margin-bottom: 2rem;
+}
+
+#como-funciona .etapa img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#como-funciona h3 {
+    font-size: 1.5rem;
+    color: var(--cor-acao);
+}
+
+/* Seção Quebra de Objeção */
+#quebra-de-objecao {
+    text-align: center;
+    background: var(--cor-fundo-claro);
+    color: var(--cor-primaria);
+}
+
+#quebra-de-objecao h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+/* Seção Sobre */
+#sobre {
+    display: flex;
+    text-align: center;
+    background: var(--cor-fundo-claro);
+    color: var(--cor-primaria);
+}
+
+#sobre h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+#sobre a {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: var(--cor-quaternaria);
+    background: var(--cor-destaque);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#sobre img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Estilo do footer */
+footer.footer {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-quaternaria);
+    text-align: center;
+    padding: 1rem;
+}
