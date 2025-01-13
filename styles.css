@@ -444,58 +444,66 @@
     }
     
     /* Seção Antes e Depois */
-    /* #antes-depois {
+    #antes-depois {
+        color: var(--cor-fundo-escuro);
         text-align: center;
         background: var(--cor-fundo-claro);
     }
     
     #antes-depois .images {
         display: flex;
+        flex-direction: column;
         gap: 1rem;
         justify-content: center;
+        align-items: center;
         margin: 1rem 1rem;
     }
     
     #antes-depois .images img {
         max-width: 300px;
-        border-radius: 10px;
-    } */
+        border-radius: 1px;
+    }
     
-    /* #antes-depois a {
+    #antes-depois a {
         display: inline-block;
         padding: 0.8rem 1.5rem;
         color: var(--cor-quaternaria);
-        background: var(--cor-acao);
+        background: var(--cor-primaria);
         border-radius: 5px;
         text-decoration: none;
         font-weight: 600;
-    } */
+    }
     
     /* Seção Como Funciona */
-    /* #como-funciona {
+    #como-funciona {
         background: var(--cor-fundo-escuro);
         display: flex;
         flex-direction: column;
         gap: 2%;
         color: var(--cor-quaternaria);
-    } */
+        text-align: center;
+    }
     
-    /* #como-funciona .etapa {
+    #como-funciona .etapa {
         display: flex;
         align-items: center;
-        gap: 2%;
+        background-color: var(--cor-secundaria);
+        color: #355c4b;
+        padding: 5%;
         margin-bottom: 2rem;
-    } */
+        border-radius: 10px;
+    }
     
-    /* #como-funciona .etapa img {
+    #como-funciona .etapa img {
+        display: none;
         max-width: 200px;
         border-radius: 10px;
     }
-     */
-    /* #como-funciona h3 {
+    
+    #como-funciona h3 {
         font-size: 1.5rem;
-        color: var(--cor-acao);
-    } */
+        /* color: var(--cor-acao); */
+    }
     
     /* Seção Quebra de Objeção */
     /* #quebra-de-objecao {
