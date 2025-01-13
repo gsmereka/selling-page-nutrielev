@@ -575,7 +575,7 @@
     
     /* Estilo do footer */
     footer.footer {
-        background: var(--cor-fundo-escuro);
+        background:#01311c ;
         color: var(--cor-quaternaria);
         text-align: center;
         padding: 1rem;
