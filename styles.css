@@ -296,7 +296,6 @@
 
         #foto-ao-lado img {
             width: 100%;
-            /* object-fit: cover; */
             mask-image: linear-gradient(to bottom, black 30%, transparent 75%);
             clip-path: polygon(0% 10%, 100% 10%, 100% 75%, 0% 75%);
         }
@@ -430,7 +429,7 @@
     }
     
     /* Animação do carrossel */
-    @keyframes moverCarrossel {
+    /* @keyframes moverCarrossel {
         0% {
             transform: translateX(0);
         }
