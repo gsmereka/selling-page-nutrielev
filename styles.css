@@ -8,6 +8,7 @@
     --cor-fundo-escuro: #355c4b; /* Verde musgo */
     --cor-acao: #d5e8d4; /* Coral suave */
     --cor-destaque: #8bc34a; /* Verde lima */
+    --cor-botao: #8bc34a; /* Verde lima */
 }
 
 @media (min-width: 600px) {
@@ -275,7 +276,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            /* line-height: 1.6; */
             color: var(--cor-primaria);
         }
 
@@ -302,9 +303,12 @@
 
         header .container {
             order: 1;
-            text-align: left;
+            /* padding: 5%; */
+            padding: 1rem;
+            text-align: center;
             bottom: 0;
             background: var(--cor-fundo-escuro);
+            margin-bottom: 10%;
         }
 
         header h1 {
@@ -315,19 +319,22 @@
 
         header p {
             font-size: 1rem;
-            /* margin-bottom: 1rem; */
+            margin-bottom: 12%;
             color: var(--cor-secundaria);
         }
 
         a.btn {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+            /* display: block; */
+            /* margin-left: auto;
+            margin-right: auto; */
+            /* margin-top: 100%; */
             padding: 0.8rem 1.5rem;
             text-align: center;
-            color: var(--cor-quaternaria);
-            background: var(--cor-acao);
-            border-radius: 1px;
+            /* color: var(--cor-quaternaria);
+            background: var(--cor-botao); */
+            color: var(--cor-fundo-claro);
+            background: var(--cor-terciaria);
+            border-radius: 10px;
             text-decoration: none;
             font-weight: 600;
         }
@@ -339,37 +346,38 @@
         visibility: hidden;
     }
     
-    
+
     /* Estilo das seções principais */
-    /* section {
+    section {
         padding: 2rem 1rem;
         background: var(--cor-fundo-claro);
-    } */
+    }
     
     /* Seção Método */
     #metodo {
-        background: var(--cor-fundo-claro);
+        /* background: var(--cor-secundaria); */
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2%;
+        /* gap: 2%; */
         justify-content: space-between;
     }
     
     #metodo .text {
         flex: 1;
         text-align: center;
-        margin-right: 2rem;
-        color: var(--cor-primaria);
+        /* margin-right: 2rem; */
+        color: var(--cor-fundo-escuro);
     }
     
     #metodo .image img {
         max-width: 100%;
         border-radius: 1px;
+        display: none;
     }
     
     /* Seção Detalhes */
-    /* #detalhes {
+    #detalhes {
         text-align: center;
         background: var(--cor-secundaria);
         color: var(--cor-fundo-escuro);
@@ -378,10 +386,10 @@
     #detalhes h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: var(--cor-destaque);
-    } */
+        /* color: var(--cor-destaque); */
+    }
     
-    /* #detalhes a {
+    #detalhes a {
         display: inline-block;
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
@@ -390,31 +398,33 @@
         text-decoration: none;
         font-weight: 600;
     }
-     */
+    
     /* Seção Carrossel */
-    /* #carrossel {
+    #carrossel {
+        padding-left: 0;
+        padding-right: 0;
         background: var(--cor-fundo-escuro);
         color: var(--cor-secundaria);
         text-align: center;
     }
     
     #carrossel .carousel {
-        margin: 0 auto;
-        padding: 10px 0;
-        max-width: 1200px;
+        /* margin: 0 auto; */
+        /* padding: 10px 0; */
+        /* max-width: 1200px; */
         overflow: hidden;
         display: flex;
     }
     
     .carousel {
         > * {
-            flex: 0 0 25%;
+            flex: 0 0 55%;
         }
     }
     
     #carrossel .group {
         display: flex;
-        gap: 15px;
+        /* gap: 15px; */
         will-change: transform;
         animation: moverCarrossel 10s linear infinite;
     }
@@ -424,14 +434,14 @@
     }
     
     /* Animação do carrossel */
-    /* @keyframes moverCarrossel {
+    @keyframes moverCarrossel {
         0% {
             transform: translateX(0);
         }
         100% {
             transform: translateX(-100%);
         }
-    } */
+    }
     
     /* Seção Antes e Depois */
     /* #antes-depois {
