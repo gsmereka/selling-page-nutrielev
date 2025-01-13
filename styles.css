@@ -479,7 +479,8 @@
         background: var(--cor-fundo-escuro);
         display: flex;
         flex-direction: column;
-        gap: 2%;
+        align-items: center;
+        /* gap: 2%; */
         color: var(--cor-quaternaria);
         text-align: center;
     }
@@ -502,37 +503,60 @@
     
     #como-funciona h3 {
         font-size: 1.5rem;
-        /* color: var(--cor-acao); */
     }
-    
+
+    #como-funciona a {
+        display: block;
+        padding: 0.8rem 1.5rem;
+        color: var(--cor-quaternaria);
+        background: var(--cor-primaria);
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
     /* Seção Quebra de Objeção */
-    /* #quebra-de-objecao {
+    #quebra-de-objecao {
         text-align: center;
         background: var(--cor-fundo-claro);
-        color: var(--cor-primaria);
-    } */
+        color: var(--cor-fundo-escuro);
+        /* margin-bottom: 1rem; */
+    }
     
-    /* #quebra-de-objecao h2 {
+    #quebra-de-objecao h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: var(--cor-primaria);
-    } */
+    }
+    #quebra-de-objecao p {
+        margin-bottom: 3rem;
+    }
     
     /* Seção Sobre */
     /* #sobre {
         display: flex;
+        flex-direction: column;
         text-align: center;
         background: var(--cor-fundo-claro);
         color: var(--cor-primaria);
+        /* margin: 0;
+        padding: 0;
     } */
     
-    /* #sobre h2 {
+    #sobre {
+        padding-top: 350px;
+        color: var(--cor-quaternaria);
+        background-image: url('images/nutricionista.jpg');
+        background-size: cover; /* Faz a imagem preencher o container */
+        background-position: center; /* Centraliza a imagem */
+        background-repeat: no-repeat; /* Evita que a imagem se repita */
+    }
+
+    #sobre h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: var(--cor-primaria);
-    } */
+    }
     
-    /* #sobre a {
+    #sobre a {
         display: inline-block;
         padding: 0.8rem 1.5rem;
         color: var(--cor-quaternaria);
@@ -540,18 +564,20 @@
         border-radius: 5px;
         text-decoration: none;
         font-weight: 600;
-    } */
+    }
     
-    /* #sobre img {
-        max-width: 600px;
+    #sobre img {
+        display: none;
+        margin-left: 0;
+        max-width: 100%;
         border-radius: 10px;
-    } */
+    }
     
     /* Estilo do footer */
-    /* footer.footer {
+    footer.footer {
         background: var(--cor-fundo-escuro);
         color: var(--cor-quaternaria);
         text-align: center;
         padding: 1rem;
-    } */
+    }
 }
