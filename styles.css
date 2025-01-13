@@ -334,19 +334,10 @@
 
     
     /* Botão WhatsApp */
-    /* button.whatsapp-btn {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: rgb(22, 139, 22);
-        color: var(--cor-fundo-claro);
-        border: none;
-        padding: 0.8rem 1rem;
-        border-radius: 50px;
-        font-size: 1rem;
-        cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    } */
+    button.whatsapp-btn {
+        display: none;
+        visibility: hidden;
+    }
     
     /* Estilo das seções principais */
     /* section {
@@ -355,23 +346,26 @@
     } */
     
     /* Seção Método */
-    /* #metodo {
+    #metodo {
         background: var(--cor-fundo-claro);
         display: flex;
+        flex-direction: column;
+        align-items: center;
         gap: 2%;
         justify-content: space-between;
     }
     
     #metodo .text {
         flex: 1;
+        text-align: center;
         margin-right: 2rem;
         color: var(--cor-primaria);
     }
     
     #metodo .image img {
         max-width: 400px;
-        border-radius: 10px;
-    } */
+        border-radius: 1px;
+    }
     
     /* Seção Detalhes */
     /* #detalhes {
