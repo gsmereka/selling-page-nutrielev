@@ -429,8 +429,12 @@
         animation: moverCarrossel 30s linear infinite;
     }
     
+    #carrossel:hover .group {
+        animation-play-state: paused;
+    }
+  
     .card {
-        height: 200px;
+        height: 175px;
     }
 
     .card img {
