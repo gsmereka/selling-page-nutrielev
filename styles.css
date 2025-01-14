@@ -31,11 +31,12 @@
     }
 
     header .container {
-        padding: 2rem 1rem;
-        text-align: left;
+        padding: 2rem 3rem;
+        text-align: center;
     }
 
     header h1 {
+        padding-top: 20%;
         font-size: 2.5rem;
         margin-bottom: 1rem;
         color: var(--cor-acao);
@@ -48,7 +49,8 @@
     }
 
     header #foto-ao-lado {
-        width: 100%;
+        min-height: 700px;
+        width: 50%;
         background-size:cover; 
         /* background-position: center; Centraliza a imagem */
         background-repeat: no-repeat;
@@ -106,24 +108,24 @@
     #metodo {
         background: var(--cor-fundo-claro);
         display: flex;
-        gap: 2%;
-        justify-content: space-between;
+        padding: 0;
     }
 
     #metodo .text {
-        flex: 1;
-        margin-right: 2rem;
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: left;
         color: var(--cor-primaria);
     }
 
     #metodo .image img {
+        height: 100%;
         max-width: 400px;
-        border-radius: 10px;
     }
 
     /* Seção Detalhes */
     #detalhes {
-        text-align: center;
         background: var(--cor-secundaria);
         color: var(--cor-fundo-escuro);
     }
