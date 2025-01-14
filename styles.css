@@ -426,11 +426,11 @@
     #carrossel .group {
         display: flex;
         will-change: transform;
-        animation: moverCarrossel 20s linear infinite;
+        animation: moverCarrossel 30s linear infinite;
     }
     
     .card {
-        height: 250px;
+        height: 200px;
     }
 
     .card img {
