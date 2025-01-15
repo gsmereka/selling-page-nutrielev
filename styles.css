@@ -41,7 +41,6 @@
     }
 
     .highlight {
-        text-shadow: 2px 2px 5px var(--cor-acao);
         color: var(--cor-fundo-escuro);
         background-color: var(--cor-secundaria); /* Cor do marcador */
         padding: 1px 10px; /* Espaçamento interno para parecer mais com marcador */
@@ -49,7 +48,6 @@
     }
 
     header h1 {
-        text-shadow: 2px 2px 5px rgb(1, 52, 5);
         margin:  0;
         padding: 0;
         padding-top: 20%;
@@ -58,7 +56,6 @@
     }
 
     header p {
-        text-shadow: 2px 2px 5px rgb(1, 52, 5);
         margin:  0;
         padding: 0;
         margin-bottom: 7%;
@@ -93,18 +90,23 @@
 
 
     /* Botão WhatsApp */
-    button.whatsapp-btn {
+    .btn-whatsapp {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: rgb(22, 139, 22);
-        color: var(--cor-fundo-claro);
-        border: none;
-        padding: 0.8rem 1rem;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
         border-radius: 50px;
-        font-size: 1rem;
-        cursor: pointer;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 1px 1px 2px #888;
+        z-index: 1000;
+    }
+
+    .fa-whatsapp {
+        margin-top: 16px;
     }
 
     /* Estilo das seções principais */
@@ -121,7 +123,6 @@
         background: var(--cor-fundo-claro);
         margin: 0;
         padding: 0;
-        text-shadow: 2px 2px 5px rgb(176, 176, 176);
     }
 
     #metodo .image {
@@ -156,9 +157,9 @@
 
 
     /* Seção Detalhes */
-    #detalhes h2, p {
+    /* #detalhes h2, p {
         text-shadow: 2px 2px 5px rgb(176, 176, 176);
-    }
+    } */
 
     #detalhes {
         text-align: center;
@@ -174,7 +175,6 @@
     }
 
     #detalhes a {
-        /* text-shadow: 0px 0px 0px rgb(176, 176, 176); */
         display: inline-block;
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
@@ -226,11 +226,15 @@
     }
   
     .card {
+        background-color: black;
+        align-items: center;
+        display: flex;
         height: 275px;
     }
 
     .card img {
-        max-height: 100%;
+        width: 100%;
+        height: auto;
     }
 
     /* Animação do carrossel */
@@ -247,20 +251,21 @@
     #antes-depois h2{
         font-size: 3rem;
     }
-
+    
     #antes-depois p{
         padding: 0 1.5rem;
         font-size: 1.5rem;
     }
-
+    
     #antes-depois {
+        display:  none;
         text-align: center;
         background: var(--cor-fundo-claro);
     }
 
-    #antes-depois h2, p {
+    /* #antes-depois h2, p {
         text-shadow: 2px 2px 5px rgb(176, 176, 176);
-    }
+    } */
 
     #antes-depois .images {
         display: flex;
@@ -285,56 +290,88 @@
     }
 
     /* Seção Como Funciona */
+    
     #como-funciona {
-        background: var(--cor-fundo-escuro);
+        align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 2%;
-        color: var(--cor-quaternaria);
+        background: var(--cor-fundo-claro);
+        color: var(--cor-primaria);
+        padding-left: 10%;
+        padding-right: 10%;
     }
-
+    
     #como-funciona .etapa {
         display: flex;
         align-items: center;
-        gap: 2%;
-        margin-bottom: 2rem;
     }
-
+    
     #como-funciona .etapa img {
-        max-width: 200px;
-        border-radius: 10px;
+        width: 30%;
+        height: auto
     }
-
+    
     #como-funciona h3 {
+        padding: 0.8rem 1.5rem;
+        color: var(--cor-primaria);
         font-size: 1.5rem;
-        color: var(--cor-acao);
+    }
+    
+    #como-funciona h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    #como-funciona p {
+        padding: 0.8rem 1.5rem;
+        color: var(--cor-primaria);
+    }
+    #como-funciona a {
+        margin-top: 5%;
+        margin-bottom: 3%;
+        display: block;
+        padding: 0.8rem 1.5rem;
+        color: var(--cor-quaternaria);
+        background: var(--cor-primaria);
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
     }
 
     /* Seção Quebra de Objeção */
     #quebra-de-objecao {
         text-align: center;
-        background: var(--cor-fundo-claro);
-        color: var(--cor-primaria);
+        background: var(--cor-fundo-escuro);
+        color: var(--cor-acao);
     }
 
     #quebra-de-objecao h2 {
         font-size: 2rem;
         margin-bottom: 1rem;
-        color: var(--cor-primaria);
+        color: var(--cor-secundaria);
     }
 
     /* Seção Sobre */
     #sobre {
         display: flex;
-        text-align: center;
+        text-align: left;
         background: var(--cor-fundo-claro);
         color: var(--cor-primaria);
+        font-size: 1.5rem;
+        padding: 0;
     }
 
     #sobre h2 {
-        font-size: 2rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 3rem;
         margin-bottom: 1rem;
         color: var(--cor-primaria);
+    }
+
+    #sobre p {
+        padding: 0.8rem 1.5rem;
     }
 
     #sobre a {
@@ -348,8 +385,9 @@
     }
 
     #sobre img {
-        max-width: 600px;
-        border-radius: 10px;
+        width: 50%;
+        /* max-width: 600px; */
+        /* border-radius: 10px; */
     }
 
     /* Estilo do footer */
@@ -431,7 +469,7 @@
 
     
     /* Botão WhatsApp */
-    button.whatsapp-btn {
+    .btn-whatsapp {
         display: none;
         visibility: hidden;
     }
