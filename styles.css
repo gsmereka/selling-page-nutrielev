@@ -1,14 +1,14 @@
 /* Variáveis globais de cores */
 :root {
-    --cor-primaria: #8e236e; /* Verde oliva */
-    --cor-secundaria: #d5e8d4; /* Verde menta suave */
-    --cor-terciaria: #8e236e; /* Laranja pêssego */
-    --cor-quaternaria: #ffffff; /* Branco puro */
-    --cor-fundo-claro: #f8fdfb; /* Verde muito claro */
-    --cor-fundo-escuro: #355c4b; /* Verde musgo */
-    --cor-acao: #d5e8d4; /* Coral suave */
-    --cor-destaque: #8bc34a; /* Verde lima */
-    --cor-botao: #8bc34a; /* Verde lima */
+    --cor-primaria: #8e236e;
+    --cor-secundaria: #d5e8d4;
+    --cor-terciaria: #8e236e;
+    --cor-quaternaria: #ffffff;
+    --cor-fundo-claro: #f8fdfb;
+    --cor-fundo-escuro: #355c4b;
+    --cor-acao: #d5e8d4;
+    --cor-destaque: #8bc34a;
+    --cor-botao: #8bc34a;
 }
 
 /* h1, h2, h3, p {
@@ -115,33 +115,54 @@
 
     /* Seção Método */
     #metodo {
-        background: var(--cor-fundo-claro);
         display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background: var(--cor-fundo-claro);
+        margin: 0;
         padding: 0;
+        text-shadow: 2px 2px 5px rgb(176, 176, 176);
     }
 
-    .text h2 {
-        line-height: 1.2;
-        font-size: 3rem;
-        /* margin-bottom: %; */
-    }
-
-    #metodo .text {
-        padding-top: 10%;
-        padding-left: 10%;
-        padding-right: 10%;
-        text-align: left;
-        color: var(--cor-primaria);
+    #metodo .image {
+        flex: 1;
+        overflow: hidden;
     }
 
     #metodo .image img {
+        width: 100%;
         height: 100%;
-        max-width: 400px;
+        object-fit: cover;
     }
-    
+
+    #metodo .text {
+        flex: 1;
+        padding: 2rem;
+        text-align: left;
+        font-size: 1.5rem;
+        color: var(--cor-primaria);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    #metodo .text h2 {
+        line-height: 1.2;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
 
     /* Seção Detalhes */
+    #detalhes h2, p {
+        text-shadow: 2px 2px 5px rgb(176, 176, 176);
+    }
+
     #detalhes {
+        text-align: center;
+        font-size: 1.5rem;
         background: var(--cor-secundaria);
         color: var(--cor-fundo-escuro);
     }
@@ -149,10 +170,11 @@
     #detalhes h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        color: var(--cor-destaque);
+        color: var(--cor-fundo-escuro);
     }
 
     #detalhes a {
+        /* text-shadow: 0px 0px 0px rgb(176, 176, 176); */
         display: inline-block;
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
@@ -164,34 +186,51 @@
 
     /* Seção Carrossel */
     #carrossel {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 7%;
         background: var(--cor-fundo-escuro);
         color: var(--cor-secundaria);
         text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #carrossel h2 {
+        font-size: 3rem;
+        padding: 10px;
     }
 
     #carrossel .carousel {
-        margin: 0 auto;
-        padding: 10px 0;
-        max-width: 1200px;
+        border-radius: 10px;
+        max-width: 1600px;
         overflow: hidden;
         display: flex;
     }
-
+    
     .carousel {
         > * {
-            flex: 0 0 25%;
+            flex: 0 0 100%;
         }
     }
-
+    
     #carrossel .group {
         display: flex;
-        gap: 15px;
         will-change: transform;
-        animation: moverCarrossel 10s linear infinite;
+        animation: moverCarrossel 30s linear infinite;
+    }
+    
+    #carrossel:hover .group {
+        animation-play-state: paused;
+    }
+  
+    .card {
+        height: 275px;
     }
 
-    .card {
-        width: 100%;
+    .card img {
+        max-height: 100%;
     }
 
     /* Animação do carrossel */
@@ -205,9 +244,22 @@
     }
 
     /* Seção Antes e Depois */
+    #antes-depois h2{
+        font-size: 3rem;
+    }
+
+    #antes-depois p{
+        padding: 0 1.5rem;
+        font-size: 1.5rem;
+    }
+
     #antes-depois {
         text-align: center;
         background: var(--cor-fundo-claro);
+    }
+
+    #antes-depois h2, p {
+        text-shadow: 2px 2px 5px rgb(176, 176, 176);
     }
 
     #antes-depois .images {
@@ -226,7 +278,7 @@
         display: inline-block;
         padding: 0.8rem 1.5rem;
         color: var(--cor-quaternaria);
-        background: var(--cor-acao);
+        background: var(--cor-primaria);
         border-radius: 5px;
         text-decoration: none;
         font-weight: 600;
