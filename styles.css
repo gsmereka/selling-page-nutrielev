@@ -15,7 +15,7 @@
     text-shadow: 2px 2px 5px rgb(1, 52, 5);
 } */
 
-@media (min-width: 600px) {
+@media (min-width: 769px) {
     body {
         font-family: 'Poppins', sans-serif;
         margin: 0;
@@ -399,7 +399,7 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 768px) {
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
@@ -675,6 +675,11 @@
         background-size: cover; /* Faz a imagem preencher o container */
         background-position: center; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita que a imagem se repita */
+    }
+
+    #sobre .texto h2, #sobre .texto p {
+        background-color: rgba(37, 83, 37, 0.8); /* verde claro com 50% de opacidade */
+        padding: 0.2rem 0; /* adiciona um pouco de espaçamento ao redor do texto */
     }
 
     #sobre h2 {
