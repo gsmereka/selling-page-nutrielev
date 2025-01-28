@@ -385,10 +385,11 @@
     }
 
     #sobre img {
-        width: 50%;
-        /* max-width: 600px; */
-        /* border-radius: 10px; */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
+
 
     /* Estilo do footer */
     footer.footer {
@@ -681,6 +682,9 @@
         background-color: rgba(37, 83, 37, 0.8); /* verde claro com 50% de opacidade */
         padding: 0.2rem 0; /* adiciona um pouco de espaçamento ao redor do texto */
     }
+    /* #sobre .texto {
+        background-color: rgba(37, 83, 37, 0.8);
+    } */
 
     #sobre h2 {
         font-size: 2rem;
