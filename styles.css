@@ -671,7 +671,7 @@
     #sobre {
         padding-top: 350px;
         color: var(--cor-quaternaria);
-        background-image: url('images/nutricionista.jpg');
+        background-image: url('images/nutricionista.webp');
         background-size: cover; /* Faz a imagem preencher o container */
         background-position: center; /* Centraliza a imagem */
         background-repeat: no-repeat; /* Evita que a imagem se repita */
