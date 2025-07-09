@@ -50,7 +50,7 @@
         padding: 0;
         padding-top: 20%;
         font-size: 3.5rem;
-        color: var(--cor-primaria);
+        color: var(--cor-fundo-claro);
     }
 
     header p {
@@ -81,7 +81,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -139,7 +139,7 @@
         padding: 2rem;
         text-align: left;
         font-size: 1.5rem;
-        color: var(--cor-primaria);
+        color: var(--cor-fundo-escuro);
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
@@ -162,14 +162,14 @@
     #detalhes {
         text-align: center;
         font-size: 1.5rem;
-        background: var(--cor-fundo-claro);
-        color: var(--cor-fundo-escuro);
+        background: var(--cor-fundo-escuro);
+        color: var(--cor-fundo-claro);
     }
 
     #detalhes h2 {
         font-size: 3rem;
         margin-bottom: 1rem;
-        color: var(--cor-fundo-escuro);
+        color: var(--cor-fundo-claro);
     }
 
     #detalhes a {
@@ -177,7 +177,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -187,7 +187,7 @@
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 7%;
-        background: var(--cor-fundo-escuro);
+        background: black;
         color: var(--cor-fundo-claro);
         text-align: center;
         display: flex;
@@ -201,7 +201,7 @@
     }
 
     #carrossel .carousel {
-        border-radius: 10px;
+        border-radius: 1px;
         max-width: 1600px;
         overflow: hidden;
         display: flex;
@@ -291,7 +291,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -335,7 +335,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -416,7 +416,7 @@
             background: var(--cor-botao); */
             color: var(--cor-fundo-claro);
             background: var(--cor-primaria);
-            border-radius: 10px;
+            border-radius: 1px;
             text-decoration: none;
             font-weight: 600;
         }
@@ -477,7 +477,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-e);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -560,7 +560,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -583,13 +583,13 @@
         color: var(--cor-fundo-escuro);
         padding: 5%;
         margin-bottom: 2rem;
-        /* border-radius: 10px; */
+        border-radius: 1px;
     }
     
     #como-funciona .etapa img {
         display: none;
         max-width: 200px;
-        border-radius: 10px;
+        border-radius: 1px;
     }
     
     #como-funciona h3 {
@@ -601,7 +601,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -633,7 +633,7 @@
     }
 
     #sobre .texto h2, #sobre .texto p {
-        background-color: rgba(85, 107, 47, 0.8); /* verde claro com 50% de opacidade */
+        background-color: var(--cor-fundo-escuro);
         padding: 0.2rem 0; /* adiciona um pouco de espaçamento ao redor do texto */
     }
     /* #sobre .texto {
@@ -650,7 +650,7 @@
         padding: 0.8rem 1.5rem;
         color: var(--cor-fundo-claro);
         background: var(--cor-primaria);
-        border-radius: 5px;
+        border-radius: 1px;
         text-decoration: none;
         font-weight: 600;
     }
@@ -659,12 +659,12 @@
         display: none;
         margin-left: 0;
         max-width: 100%;
-        border-radius: 10px;
+        border-radius: 1px;
     }
     
     /* Estilo do footer */
     footer.footer {
-        background:#012c1b ;
+        background: var(--cor-fundo-escuro);;
         color: var(--cor-fundo-claro);
         text-align: center;
         padding: 5px;
