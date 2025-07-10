@@ -1,360 +1,307 @@
-/* Variáveis globais de cores */
+/* ============================= */
+/*         VARIÁVEIS            */
+/* ============================= */
 :root {
-    --navy-blue: #1a2b4c;
-    --off-white: #fdfdfb;
-    --olive-green: #556b2f;
-    --cor-primaria: var(--olive-green);
-    --cor-fundo-claro: var(--off-white);
-    --cor-fundo-escuro: var(--navy-blue);
-    --cor-botao: #8bc34a;
+  --navy-blue: #1a2b4c;
+  --off-white: #fdfdfb;
+  --olive-green: #556b2f;
+  --cor-primaria: var(--olive-green);
+  --cor-fundo-claro: var(--off-white);
+  --cor-fundo-escuro: var(--navy-blue);
+  --cor-botao: #8bc34a;
 }
 
-/* h1, h2, h3, p {
-    text-shadow: 2px 2px 5px rgb(1, 52, 5);
-} */
-
+/* ============================= */
+/*       ESTILO DESKTOP FIXO     */
+/* ============================= */
 @media (min-width: 769px) {
-    body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        color: var(--cor-primaria);
-    }
+  html, body {
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-fundo-escuro);
+  }
 
-    /* Estilo do header */
-    header.header {
-        background: var(--cor-fundo-escuro);
-        display: flex;
-        justify-content: space-between;
-        color: var(--cor-fundo-claro);
-    }
+  header.header {
+    background: var(--cor-fundo-escuro);
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-fundo-claro);
+  }
 
-    header .container {
-        width: 60%;
-        min-height: 700px;
-        padding: 2rem 3rem;
-        gap: 100px;
-        text-align: center;
-    }
+  header .container {
+    width: 700px;
+    min-height: 500px;
+    padding: 40px;
+    text-align: center;
+  }
 
-    .highlight {
-        color: var(--cor-fundo-escuro);
-        background-color: var(--cor-fundo-claro); /* Cor do marcador */
-        padding: 1px 10px; /* Espaçamento interno para parecer mais com marcador */
-        /* border-radius: 12px; */
-    }
+  .highlight {
+    color: var(--cor-fundo-escuro);
+    background-color: var(--cor-fundo-claro);
+    padding: 5px 15px;
+  }
 
-    header h1 {
-        margin:  0;
-        padding: 0;
-        padding-top: 20%;
-        font-size: 3.5rem;
-        color: var(--cor-fundo-claro);
-    }
+  header h1 {
+    margin-top: 100px;
+    font-size: 48px;
+    color: var(--cor-fundo-claro);
+  }
 
-    header p {
-        margin:  0;
-        padding: 0;
-        margin-bottom: 7%;
-        font-size: 1.5rem;
-        color: var(--cor-fundo-claro);
-    }
+  header p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: var(--cor-fundo-claro);
+  }
 
-    header #foto-ao-lado {
-        width: 40%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('./images/nutricionista-header.jpg');
-    }
+  header #foto-ao-lado {
+    width: 500px;
+    background-image: url('./images/nutricionista-header.jpg');
+    background-size: cover;
+    background-position: center;
+  }
 
-    header #foto-ao-lado img {
-        display: none;
-        margin:  0;
-        padding: 0;
-        height: 50%;
-    }
+  header #foto-ao-lado img {
+    display: none;
+  }
 
-    a.btn {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        color: var(--cor-fundo-claro);
-        background: var(--cor-primaria);
-        border-radius: 1px;
-        text-decoration: none;
-        font-weight: 600;
-    }
+  a.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: var(--cor-fundo-claro);
+    background: var(--cor-primaria);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+  }
 
+  .btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+  }
 
-    /* Botão WhatsApp */
-    .btn-whatsapp {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 40px;
-        right: 40px;
-        background-color: #25d366;
-        color: #fff;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 1px 1px 2px #888;
-        z-index: 1000;
-    }
+  section {
+    padding: 60px;
+    background: var(--cor-fundo-claro);
+  }
 
-    .fa-whatsapp {
-        margin-top: 16px;
-    }
+  #metodo {
+    display: flex;
+    background: var(--cor-fundo-claro);
+  }
 
-    /* Estilo das seções principais */
-    section {
-        padding: 2rem 1rem;
-        background: var(--cor-fundo-claro);
-    }
+  #metodo .image,
+  #metodo .text {
+    width: 50%;
+  }
 
-    /* Seção Método */
-    #metodo {
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        background: var(--cor-fundo-claro);
-        margin: 0;
-        padding: 0;
-    }
+  #metodo .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-    #metodo .image {
-        flex: 1;
-        overflow: hidden;
-    }
+  #metodo .text {
+    padding: 40px;
+    font-size: 20px;
+    color: var(--cor-fundo-escuro);
+  }
 
-    #metodo .image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  #metodo .text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 
-    #metodo .text {
-        flex: 1;
-        padding: 2rem;
-        text-align: left;
-        font-size: 1.5rem;
-        color: var(--cor-fundo-escuro);
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-    }
+  #detalhes {
+    text-align: center;
+    font-size: 20px;
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-fundo-claro);
+  }
 
-    #metodo .text h2 {
-        line-height: 1.2;
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
+  #detalhes h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 
+  #detalhes a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--cor-primaria);
+    color: var(--cor-fundo-claro);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 4px;
+  }
 
-    /* Seção Detalhes */
-    /* #detalhes h2, p {
-        text-shadow: 2px 2px 5px rgb(176, 176, 176);
-    } */
+  #carrossel {
+    background: black;
+    color: var(--cor-fundo-claro);
+    text-align: center;
+    padding: 60px;
+  }
 
-    #detalhes {
-        text-align: center;
-        font-size: 1.5rem;
-        background: var(--cor-fundo-escuro);
-        color: var(--cor-fundo-claro);
-    }
+  #carrossel h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 
-    #detalhes h2 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        color: var(--cor-fundo-claro);
-    }
+  #carrossel .carousel {
+    max-width: 1000px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+  }
 
-    #detalhes a {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        color: var(--cor-fundo-claro);
-        background: var(--cor-primaria);
-        border-radius: 1px;
-        text-decoration: none;
-        font-weight: 600;
-    }
+  .carousel > * {
+    flex: 0 0 100%;
+  }
 
-    /* Seção Carrossel */
-    #carrossel {
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 7%;
-        background: black;
-        color: var(--cor-fundo-claro);
-        text-align: center;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #carrossel h2 {
-        font-size: 3rem;
-        padding: 10px;
-    }
+  #carrossel .group {
+    display: flex;
+    animation: moverCarrossel 30s linear infinite;
+  }
 
-    #carrossel .carousel {
-        border-radius: 1px;
-        max-width: 1600px;
-        overflow: hidden;
-        display: flex;
-    }
-    
-    .carousel {
-        > * {
-            flex: 0 0 100%;
-        }
-    }
-    
-    #carrossel .group {
-        display: flex;
-        will-change: transform;
-        animation: moverCarrossel 30s linear infinite;
-    }
-    
-    #carrossel:hover .group {
-        animation-play-state: paused;
-    }
-  
-    .card {
-        background-color: black;
-        align-items: center;
-        display: flex;
-        height: 275px;
-    }
+  #carrossel:hover .group {
+    animation-play-state: paused;
+  }
 
-    .card img {
-        width: 100%;
-        height: auto;
-    }
+  .card {
+    height: 275px;
+    display: flex;
+    align-items: center;
+    background: black;
+  }
 
-    /* Animação do carrossel */
-    @keyframes moverCarrossel {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 
-    /* Seção Como Funciona */
-    
-    #como-funciona {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        background: var(--cor-fundo-claro);
-        color: var(--cor-primaria);
-        padding-left: 10%;
-        padding-right: 10%;
+  @keyframes moverCarrossel {
+    0% {
+      transform: translateX(0);
     }
-    
-    #como-funciona .etapa {
-        display: flex;
-        align-items: center;
+    100% {
+      transform: translateX(-100%);
     }
-    
-    #como-funciona .etapa img {
-        width: 30%;
-        height: auto
-    }
-    
-    #como-funciona h3 {
-        padding: 0.8rem 1.5rem;
-        color: var(--cor-primaria);
-        font-size: 1.5rem;
-    }
-    
-    #como-funciona h2 {
-        text-align: center;
-        font-size: 3rem;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    
-    #como-funciona p {
-        padding: 0.8rem 1.5rem;
-        color: var(--cor-primaria);
-    }
-    #como-funciona a {
-        margin-top: 5%;
-        margin-bottom: 3%;
-        display: block;
-        padding: 0.8rem 1.5rem;
-        color: var(--cor-fundo-claro);
-        background: var(--cor-primaria);
-        border-radius: 1px;
-        text-decoration: none;
-        font-weight: 600;
-    }
+  }
 
-    /* Seção Quebra de Objeção */
-    #quebra-de-objecao {
-        text-align: center;
-        background: var(--cor-fundo-escuro);
-        color: var(--cor-primaria);
-    }
+  #como-funciona {
+    text-align: center;
+    padding: 60px;
+    color: var(--cor-fundo-escuro);
+  }
 
-    #quebra-de-objecao h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        color: var(--cor-fundo-claro);
-    }
+  #como-funciona h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 
-    /* Seção Sobre */
-    #sobre {
-        display: flex;
-        text-align: left;
-        background: var(--cor-fundo-claro);
-        color: var(--cor-primaria);
-        font-size: 1.5rem;
-        padding: 0;
-    }
+  #como-funciona .etapa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    #sobre h2 {
-        padding: 0.8rem 1.5rem;
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        color: var(--cor-primaria);
-    }
+  #como-funciona .etapa img {
+    width: 150px;
+  }
 
-    #sobre p {
-        padding: 0.8rem 1.5rem;
-    }
+  #como-funciona .etapa div {
+    width: 700px;
+    text-align: left;
+    padding: 20px;
+  }
 
-    #sobre a {
-        display: inline-block;
-        padding: 0.8rem 1.5rem;
-        color: var(--cor-fundo-claro);
-        background: var(--cor-primaria);
-        border-radius: 1px;
-        text-decoration: none;
-        font-weight: 600;
-    }
+  #como-funciona h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
 
-    #sobre img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  #como-funciona p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
 
+  #quebra-de-objecao {
+    text-align: center;
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-fundo-claro);
+    padding: 60px;
+  }
 
-    /* Estilo do footer */
-    footer.footer {
-        background: var(--cor-fundo-escuro);
-        color: var(--cor-fundo-claro);
-        text-align: center;
-        padding: 1rem;
-    }
+  #quebra-de-objecao h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  #quebra-de-objecao p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  #sobre {
+    display: flex;
+    background: var(--cor-fundo-claro);
+    color: var(--cor-fundo-escuro);
+  }
+
+  #sobre .image {
+    width: 50%;
+  }
+
+  #sobre .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #sobre .texto {
+    width: 50%;
+    padding: 40px;
+  }
+
+  #sobre h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  #sobre p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  footer.footer {
+    background: var(--cor-fundo-escuro);
+    color: var(--cor-fundo-claro);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+  }
 }
+
 
 @media (max-width: 768px) {
         body {
