@@ -581,7 +581,8 @@
 
     #sobre .texto h2, #sobre .texto p {
         background-color: var(--cor-fundo-escuro);
-        padding: 0.2rem 0; /* adiciona um pouco de espaçamento ao redor do texto */
+        padding: 10px;
+        /* padding: 0.2rem 0; adiciona um pouco de espaçamento ao redor do texto */
     }
     /* #sobre .texto {
         background-color: rgba(37, 83, 37, 0.8);
@@ -589,6 +590,7 @@
 
     #sobre h2 {
         font-size: 2rem;
+        
         margin-bottom: 1rem;
     }
     
